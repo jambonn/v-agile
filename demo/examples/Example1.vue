@@ -3,10 +3,10 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h2 class="section__title">
-            <strong>#1</strong> demo
-          </h2>
-          <p class="section__description">v-agile with default settings and minimal styles</p>
+          <h2 class="section__title"><strong>#1</strong> demo</h2>
+          <p class="section__description">
+            v-agile with default settings and minimal styles
+          </p>
         </div>
       </div>
       <div class="row">
@@ -30,8 +30,8 @@
 
 <script>
 export default {
-  name: 'Example-1'
-}
+  name: "Example-1",
+};
 </script>
 
 <style lang="scss">
@@ -46,7 +46,7 @@ export default {
       color: #ccc;
       cursor: pointer;
       font-size: 24px;
-      transition-duration: .3s;
+      transition-duration: 0.3s;
       &:hover {
         color: #888;
       }
@@ -65,7 +65,7 @@ export default {
         line-height: 0;
         margin: 0;
         padding: 0;
-        transition-duration: .3s;
+        transition-duration: 0.3s;
         width: 10px;
       }
       &--current,
@@ -89,7 +89,6 @@ export default {
       font-weight: 300;
     }
   }
-
 
   $colors: #f1c40f #e67e22 #e74c3c #9b59b6 #3498db #2ecc71;
   @for $i from 1 through length($colors) {

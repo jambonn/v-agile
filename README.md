@@ -38,11 +38,11 @@ createApp(App)
 
 ```js
 // YourComponent.vue
-import { VAgile } from 'v-agile'
+import { Agile } from 'v-agile'
 
 export default {
   components: {
-    agile: VAgile
+    agile: Agile
   }
 }
 ```

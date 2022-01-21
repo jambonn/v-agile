@@ -3,10 +3,11 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h2 class="section__title">
-            <strong>#2</strong> demo
-          </h2>
-          <p class="section__description">v-agile as a full size image carousel with custom styles for arrows and dots indicators</p>
+          <h2 class="section__title"><strong>#2</strong> demo</h2>
+          <p class="section__description">
+            v-agile as a full size image carousel with custom styles for arrows
+            and dots indicators
+          </p>
         </div>
       </div>
     </div>
@@ -14,17 +15,37 @@
       <div class="row">
         <div class="col-xs-12">
           <agile :initial-slide="2">
-            <img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="" class="slide" />
-            <img src="https://images.unsplash.com/photo-1524260855046-f743b3cdad07?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="" class="slide" />
-            <img src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="" class="slide" />
-            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="" class="slide" />
-            <img src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="" class="slide" />
+            <img
+              src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+              alt=""
+              class="slide"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1524260855046-f743b3cdad07?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+              alt=""
+              class="slide"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1526080676457-4544bf0ebba9?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+              alt=""
+              class="slide"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+              alt=""
+              class="slide"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+              alt=""
+              class="slide"
+            />
 
             <template #prevButton>
               <i class="fas fa-chevron-left"></i>
             </template>
             <template #nextButton>
-              <i class="fas right"></i>
+              <i class="fas fa-chevron-right"></i>
             </template>
           </agile>
         </div>
@@ -35,8 +56,8 @@
 
 <script>
 export default {
-  name: 'Example-2'
-}
+  name: "Example-2",
+};
 </script>
 
 <style lang="scss">
@@ -51,11 +72,11 @@ export default {
       height: 100%;
       position: absolute;
       top: 0;
-      transition-duration: .3s;
+      transition-duration: 0.3s;
       width: 80px;
 
       &:hover {
-        background-color: rgba(#000, .5);
+        background-color: rgba(#000, 0.5);
         opacity: 1;
       }
       &--prev {
@@ -85,7 +106,7 @@ export default {
         line-height: 0;
         margin: 0;
         padding: 0;
-        transition-duration: .3s;
+        transition-duration: 0.3s;
         width: 10px;
       }
       &--current,

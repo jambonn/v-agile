@@ -3,9 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h2 class="section__title">
-            <strong>#4</strong> demo
-          </h2>
+          <h2 class="section__title"><strong>#4</strong> demo</h2>
           <p class="section__description">
             responsive settings and two related carousels
           </p>
@@ -13,15 +11,35 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <agile ref="main" class="main" :options="options1" :as-nav-for="asNavFor1">
-            <div class="slide" v-for="(slide, index) in slides" :key="index" :class="`slide--${index}`">
+          <agile
+            ref="main"
+            class="main"
+            :options="options1"
+            :as-nav-for="asNavFor1"
+          >
+            <div
+              class="slide"
+              v-for="(slide, index) in slides"
+              :key="index"
+              :class="`slide--${index}`"
+            >
               <img :src="slide" alt="" />
             </div>
           </agile>
         </div>
         <div class="col-xs-12">
-          <agile ref="thumbnails" class="thumbnails" :options="options2" :as-nav-for="asNavFor2">
-            <div v-for="(slide, index) in slides" :key="index" :class="`slide slide--thumbnail slide--${index}`" @click="$refs.thumbnails.goTo(index)">
+          <agile
+            ref="thumbnails"
+            class="thumbnails"
+            :options="options2"
+            :as-nav-for="asNavFor2"
+          >
+            <div
+              v-for="(slide, index) in slides"
+              :key="index"
+              :class="`slide slide--thumbnail slide--${index}`"
+              @click="$refs.thumbnails.goTo(index)"
+            >
               <img :src="slide" alt="" />
             </div>
             <template #prevButton>
@@ -38,15 +56,15 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from "vue";
 
 export default {
-  name: 'Example-4',
+  name: "Example-4",
   setup() {
     const options1 = {
       dots: false,
       fade: true,
-      navButtons: false
+      navButtons: false,
     };
     const options2 = {
       autoplay: true,
@@ -59,25 +77,25 @@ export default {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 5
-          }
+            slidesToShow: 5,
+          },
         },
         {
           breakpoint: 1000,
           settings: {
-            navButtons: true
-          }
-        }
-      ]
+            navButtons: true,
+          },
+        },
+      ],
     };
     const slides = [
-      'https://images.unsplash.com/photo-1453831362806-3d5577f014a4?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ',
-      'https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ',
-      'https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ',
-      'https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ',
-      'https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ',
-      'https://images.unsplash.com/photo-1472926373053-51b220987527?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ',
-      'https://images.unsplash.com/photo-1497534547324-0ebb3f052e88?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+      "https://images.unsplash.com/photo-1453831362806-3d5577f014a4?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "https://images.unsplash.com/photo-1472926373053-51b220987527?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "https://images.unsplash.com/photo-1497534547324-0ebb3f052e88?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
     ];
     const thumbnails = ref(null);
     const main = ref(null);
@@ -87,7 +105,7 @@ export default {
     onMounted(() => {
       asNavFor1.value.push(thumbnails.value);
       asNavFor2.value.push(main.value);
-    })
+    });
 
     return {
       options1,
@@ -97,9 +115,9 @@ export default {
       main,
       asNavFor1,
       asNavFor2,
-    }
-  }
-}
+    };
+  },
+};
 </script>
 
 <style lang="scss">
@@ -121,7 +139,7 @@ export default {
       color: #ccc;
       cursor: pointer;
       font-size: 24px;
-      transition-duration: .3s;
+      transition-duration: 0.3s;
 
       &:hover {
         color: #888;
@@ -141,7 +159,7 @@ export default {
         line-height: 0;
         margin: 0;
         padding: 0;
-        transition-duration: .3s;
+        transition-duration: 0.3s;
         width: 10px;
       }
       &--current,
@@ -179,10 +197,10 @@ export default {
       cursor: pointer;
       height: 100px;
       padding: 0 5px;
-      transition: opacity .3s;
+      transition: opacity 0.3s;
 
       &:hover {
-        opacity: .75;
+        opacity: 0.75;
       }
     }
     img {

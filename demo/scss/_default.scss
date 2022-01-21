@@ -24,7 +24,7 @@ button,
 .button,
 input,
 textarea {
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 
   &:active,
   &:focus {
@@ -48,7 +48,7 @@ textarea {
 .clearfix {
   &:before,
   &:after {
-    content: '';
+    content: "";
     display: table;
   }
 
@@ -74,6 +74,6 @@ textarea {
 }
 
 .no-transition {
-  transition: none!important;
-  transition-duration: 0s!important;
+  transition: none !important;
+  transition-duration: 0s !important;
 }

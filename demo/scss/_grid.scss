@@ -3,9 +3,20 @@
 ============================*/
 @use "sass:math";
 
-$gutters: (xs: $gutter-xs, sm: $gutter-sm, md: $gutter-md, lg: $gutter-lg, xl: $gutter-xl);
-$contents: (xs: $content-xs, sm: $content-sm, md: $content-md, lg: $content-lg, xl: $content-xl);
-
+$gutters: (
+  xs: $gutter-xs,
+  sm: $gutter-sm,
+  md: $gutter-md,
+  lg: $gutter-lg,
+  xl: $gutter-xl,
+);
+$contents: (
+  xs: $content-xs,
+  sm: $content-sm,
+  md: $content-md,
+  lg: $content-lg,
+  xl: $content-xl,
+);
 
 // CONTAINER
 .container {
@@ -26,7 +37,6 @@ $contents: (xs: $content-xs, sm: $content-sm, md: $content-md, lg: $content-lg, 
   @include clearfix;
 }
 
-
 // CONTAINER FLUID
 .container-fluid {
   margin-left: auto;
@@ -43,7 +53,6 @@ $contents: (xs: $content-xs, sm: $content-sm, md: $content-md, lg: $content-lg, 
 
   @include clearfix;
 }
-
 
 // ROW
 .row {
@@ -75,7 +84,6 @@ $contents: (xs: $content-xs, sm: $content-sm, md: $content-md, lg: $content-lg, 
   }
 }
 
-
 // COLUMNS
 @each $breakpoint in $breakpoints {
   .col-#{$breakpoint} {
@@ -94,14 +102,14 @@ $contents: (xs: $content-xs, sm: $content-sm, md: $content-md, lg: $content-lg, 
   }
 
   .push-#{$breakpoint}-auto {
-    left: auto
+    left: auto;
   }
 }
 
 @for $i from 1 through $columns {
   .col-xs-#{$i} {
     flex: 0 0 #{math.div(100%, $columns) * $i};
-    max-width: #{math.div(100%, $columns) *$i};
+    max-width: #{math.div(100%, $columns) * $i};
   }
 
   .offset-xs-#{$i} {

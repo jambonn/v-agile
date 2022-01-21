@@ -17,21 +17,19 @@ $z-indexes: ();
 
 /*=====  End of SETTINGS  ======*/
 
-
-
-
-
 /*===============================
 =            GENERAL            =
 ===============================*/
 
 body {
   color: $dark;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 300;
 }
 
@@ -90,7 +88,7 @@ h1, h2, h3 {
   background-color: $green;
   border-radius: 10px;
   color: #fff;
-  font-size: .5em;
+  font-size: 0.5em;
   font-weight: 600;
   margin-left: 5px;
   padding: 1px 7px 2px;
@@ -136,7 +134,7 @@ h1, h2, h3 {
   }
 
   &__description {
-    color: rgba($dark, .6);
+    color: rgba($dark, 0.6);
   }
 
   &__subtitle {
@@ -145,7 +143,7 @@ h1, h2, h3 {
   }
 }
 
-pre[class*=language-] {
+pre[class*="language-"] {
   border-radius: 0;
   max-height: 200px;
   overflow-y: auto;
@@ -215,7 +213,7 @@ pre[class*=language-] {
     text-decoration: none;
 
     &:hover {
-      color: $dark
+      color: $dark;
     }
   }
 
@@ -245,13 +243,12 @@ pre[class*=language-] {
   height: 200px;
 
   @include sm {
-    height: 300px
+    height: 300px;
   }
 
   @include md {
-    height: 500px
+    height: 500px;
   }
 }
-
 
 /*=====  End of GENERAL  ======*/

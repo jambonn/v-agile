@@ -4,17 +4,13 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="copyright">
-            <span>
-              Copyright © {{ currentYear }} <strong>Jambon</strong>
-            </span>
+            <span> Copyright © {{ currentYear }} <strong>Jambon</strong> </span>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <div class="license">
-            Licensed under the MIT license
-          </div>
+          <div class="license">Licensed under the MIT license</div>
         </div>
       </div>
     </div>
@@ -23,11 +19,11 @@
 
 <script>
 export default {
-  name: 'SiteFooter',
+  name: "SiteFooter",
   setup() {
     return {
       currentYear: new Date().getFullYear(),
-    }
+    };
   },
-}
+};
 </script>
